@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCB Data | Insight You Can Trust</title>
+    <meta name="description" content="SCB Data helps small consumer brands make confident, data-driven decisions through research that turns insight into action." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="SCB Data | Insight You Can Trust" />
+    <meta property="og:description" content="SCB Data helps small consumer brands make confident, data-driven decisions through research that turns insight into action." />
+    <meta property="og:url" content="https://scbdata.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://scbdata.com/og-image.jpg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://scbdata.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+    <!-- Theme color -->
+    <meta name="theme-color" content="#1F2C4B" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECB755C0XJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ECB755C0XJ');
+    </script>
+
+    <!-- Google Fonts and Tailwind setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'soft-ivory': '#FAF9F6',
+              'warm-beige': '#F7F2E9',
+              'white': '#FFFFFF',
+              'midnight-blue': '#1F2C4B',
+              'charcoal-gray': '#33383F',
+              'charcoal-gray-light': '#40434A',
+              'warm-coral': '#E5735C',
+              'warm-coral-dark': '#DD6750',
+              'sage-green': '#B9C79A',
+            },
+            boxShadow: {
+              'soft': '0 4px 12px rgba(0, 0, 0, 0.05)',
+              'soft-lg': '0 8px 24px rgba(0, 0, 0, 0.07)',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'fade-in': 'fadeIn 1s ease-out forwards',
+              'bounce-slow': 'bounce 2.5s infinite',
+              'lift-and-shadow': 'liftAndShadow 0.3s ease-out forwards',
+              'draw-checkmark': 'drawCheckmark 1.5s ease-in-out infinite alternate',
+              'grow-bar': 'growBar 1.5s ease-in-out forwards',
+              'draw-line': 'drawLine 1.2s 1s ease-out forwards',
+              'glow': 'glow 2.5s 2s ease-in-out infinite',
+              'pop-in': 'popIn 0.6s ease-out forwards',
+              'fade-in-line': 'fadeInLine 0.5s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(16px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              bounce: {
+                '0%, 100%': { transform: 'translateY(-15%)', animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)' },
+                '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)' },
+              },
+              liftAndShadow: {
+                '0%': { transform: 'translateY(0)', boxShadow: 'var(--tw-shadow-soft)' },
+                '100%': { transform: 'translateY(-2px)', boxShadow: 'var(--tw-shadow-soft-lg)' },
+              },
+              drawCheckmark: {
+                '0%': { strokeDashoffset: '25' },
+                '100%': { strokeDashoffset: '50' },
+              },
+              growBar: {
+                '0%': { transform: 'scaleY(0)' },
+                '100%': { transform: 'scaleY(1)' },
+              },
+              drawLine: {
+                '0%': { strokeDashoffset: '1000' },
+                '100%': { strokeDashoffset: '0' },
+              },
+              glow: {
+                '0%, 100%': { opacity: '0.6' },
+                '50%': { opacity: '1' },
+              },
+              popIn: {
+                '0%': { opacity: '0', transform: 'scale(0.8)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              },
+              fadeInLine: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0px)' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Your main site stylesheet -->
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body class="bg-soft-ivory text-charcoal-gray font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
